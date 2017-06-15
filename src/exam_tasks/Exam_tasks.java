@@ -35,7 +35,7 @@ public class Exam_tasks {
         final int totalWorkSeconds = 28800; //Seconds in 8 hours 
         
         Scanner in = new Scanner(System.in); 
-        System.out.println("Task 1");
+        /*System.out.println("Task 1");
         System.out.println("Let's count remaining working hours");
         System.out.println("Please enter number in seconds from work start");
         firstValue = in.nextInt(); 
@@ -71,18 +71,28 @@ public class Exam_tasks {
         groupCount = firstValue + secondValue;
         passedStudentsPercent = (firstValue * 100) / groupCount;
         System.out.println(passedStudentsPercent + " percents of students is passed exam ");
-        System.out.println((100 - passedStudentsPercent) + " percents of students is not passed exam ");
-        
+        System.out.println((100 - passedStudentsPercent) + " percents of students is not passed exam ");*/
+                
         System.out.println("Task 5");
         System.out.println("Let's find a number of floppies, which need to transfer a movie");
         System.out.println("Please enter \"weight\" of movie in gigabytes");
         movieWeight = in.nextDouble();         
         int floppyVolume = 1440 * 1024; //in bytes
         movieWeight = movieWeight * 1024 * 1024 * 1024; //in bytes
-        totalValue = (movieWeight / floppyVolume) + 1;
+        if ((movieWeight % floppyVolume) == 0)
+        {
+            totalValue = (movieWeight / floppyVolume);
+            System.out.println("No need additional disquette" + totalValue);
+        }
+        else
+        {
+            totalValue = (movieWeight / floppyVolume) + 1;
+            System.out.println("Need  one additional disquette " + totalValue);
+        }
+               
         System.out.println("Total " + (int)totalValue + " of 3.5\' floppies is needed to transfer movie");
         
-        System.out.println("Task 6");
+        /*System.out.println("Task 6");
         System.out.println("The Point in Polygon Problem");
         System.out.println("Please enter upper left horizontal coordinate \"X\" ");
         firstValue = in.nextInt();
@@ -126,7 +136,7 @@ public class Exam_tasks {
                 System.out.print(i + " ");
             }
         }
-        
+        */
 
         
     }
