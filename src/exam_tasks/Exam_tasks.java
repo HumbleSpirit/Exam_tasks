@@ -81,6 +81,8 @@ public class Exam_tasks {
         
         System.out.println("Task 6");
         System.out.println("The Point in Polygon Problem");
+                
+                
         
         
         System.out.println("Task 7");
@@ -91,13 +93,13 @@ public class Exam_tasks {
                 System.out.print(i + " ");
             }
             
-        }*/
+        }
         
         System.out.println("Task 8");
         System.out.println("Let's find a aliquot numbers to entered number");
         firstValue = in.nextInt();
-        for (int i = 0; i <= 100; i++) {
-            if ((i % firstValue) == 0)
+        for (int i = 1; i <= firstValue; i++) {
+            if ((firstValue % i ) == 0)
             {
                 System.out.print(i + " ");
             }
