@@ -20,6 +20,10 @@ public class Exam_tasks {
         // TODO code application logic here
         int firstValue = 0;
         int secondValue = 0;
+        int thirdValue = 0;
+        int fourthValue = 0;
+        int fifthValue = 0;
+        int sixthValue = 0;
         int groupCount = 0;
         double notebookPrice = 0;
         double discountValue = 0;
@@ -77,12 +81,31 @@ public class Exam_tasks {
         int floppyVolume = 1440 * 1024; //in bytes
         movieWeight = movieWeight * 1024 * 1024 * 1024; //in bytes
         totalValue = (movieWeight / floppyVolume) + 1;
-        System.out.println("Total " + (int)totalValue + " of 3.5\' floppies is needed to transfer movie");
+        System.out.println("Total " + (int)totalValue + " of 3.5\' floppies is needed to transfer movie");*/
         
         System.out.println("Task 6");
         System.out.println("The Point in Polygon Problem");
-                
-                
+        System.out.println("Please enter upper left horizontal coordinate \"X\" ");
+        firstValue = in.nextInt();
+        System.out.println("Please enter upper left vertical coordinate \"Y\" ");
+        secondValue = in.nextInt();
+        System.out.println("Please enter lower right horizontal coordinate \"X\" ");
+        thirdValue = in.nextInt();
+        System.out.println("Please enter lower right vertical coordinate \"Y\" ");
+        fourthValue = in.nextInt();
+        System.out.println("Please enter \"X\" coordinate for point ");
+        fifthValue = in.nextInt();
+        System.out.println("Please enter \"Y\" coordinate for point ");
+        sixthValue = in.nextInt();
+        
+        if ((thirdValue - firstValue <= fifthValue) && (fourthValue - secondValue <= sixthValue))
+                {
+                    System.out.println("Point is belongs to rectangle");
+                }
+        else
+        {
+            System.out.println("Point is not belongs to rectangle");
+        }
         
         
         System.out.println("Task 7");
