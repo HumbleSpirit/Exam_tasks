@@ -31,7 +31,6 @@ public class Exam_tasks {
         double closedDealsAmount = 0;
         double earnedPercent = 0;
         double passedStudentsPercent = 0;
-        double notPassedStudentsPercent = 0;
         double movieWeight = 0;
         final int totalWorkSeconds = 28800; //Seconds in 8 hours 
         
